@@ -17,7 +17,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -28,7 +28,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 /* AUTOFILL-STYLES */
 /*input:-webkit-autofill,
@@ -45,7 +44,6 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }*/
 
-
 /* PLACEHOLDER-STYLES */
 /*::-webkit-input-placeholder,
 ::-moz-placeholder,
@@ -54,7 +52,6 @@ select:-webkit-autofill:focus {
   color: rgba(52, 49, 61, 0.5);
   opacity: 1;
 }*/
-
 
 /* VISUALLY-HIDDEN */
 .visually-hidden {
@@ -68,7 +65,6 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 
-
 /* CONTAINER */
 .container {
   width: 100%;
@@ -79,18 +75,160 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
-
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
+.washing-machine {
+  background-color: rgb(239, 147, 162);
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.material-type-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.material-type {
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  color: rgb(234, 203, 208);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 85px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  padding: 0;
+}
+.material-type:hover {
+  color: #fff;
+}
+.material-type:not(:last-child) {
+  margin-right: 40px;
+}
+.washing-machine-info-wrapper {
+  padding-right: 0;
+  margin-bottom: 80px;
+}
+.washing-machine-info {
+  padding: 0;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+.washing-machine__controller {
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.washing-machine__controller:before {
+  content: 'a';
+  background-image: url('../');
+  background-color: rgb(213, 176, 176);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -100px;
+  cursor: pointer;
+}
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
+.washing-machine__controller::after {
+  content: 'a';
+  background-image: url('../');
+  background: rgb(213, 176, 176);
+  height: 100px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -100px;
+  cursor: pointer;
+}
+.washing-machine__controller-item {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-image: linear-gradient(to left, rgb(33, 32, 32), rgb(100, 96, 96));
+}
+.machine-controller-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.washing-machine__starter-btn {
+  display: inline-block;
+  padding: 15px 24px;
+  min-width: 250px;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  align-self: center;
+  position: absolute;
+  bottom: -20px;
+}
+.washing-machine__starter-btn:hover {
+  background-color: #222;
+}
+.machine-controller-card__menu {
+  color: palevioletred;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.machine-controller-card__value {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-top: 0;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(20, 19, 19, 0.5);
+}
+.modal__dialog {
+  width: 500px;
+  height: 300px;
+  border-radius: 18px;
+  background: #fff;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.btn-clickme {
+  padding: 12px 24px;
+  display: inline-block;
+  align-self: center;
+}
+.modal-close {
+  display: none;
+}
+.modal__coontent {
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
 }

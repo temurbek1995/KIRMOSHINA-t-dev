@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <section class="washing-machine">
+        <div class="material-type-wrapper container">
+          <button class="material-type">Synthetic</button>
+          <button class="material-type">Wool</button>
+          <button class="material-type">Denim</button>
+          <button class="material-type">Silk</button>
+          <button class="material-type">Line</button>
+        </div>
 
+        <div class="container">
+          <div class="washing-machine-info-wrapper">
+            <p class="washing-machine-info">
+              Loads should be under 8 pounds.It is recomended using neutral
+              detengent to prevent
+              <br />
+              damage to the clothe and to improve the washing results
+            </p>
+          </div>
+          <ul class="washing-machine__controller">
+            <li
+              class="washing-machine__controller-item machine-controller-card"
+            >
+              <h3 class="machine-controller-card__menu">
+                Timer
+              </h3>
+              <p class="machine-controller-card__value">45 min</p>
+              <button class="washing-machine__starter-btn">Start</button>
+            </li>
+            <li
+              class="washing-machine__controller-item machine-controller-card"
+            >
+              <h3 class="machine-controller-card__menu">
+                Tempereature
+              </h3>
+              <p class="machine-controller-card__value">Cold</p>
+            </li>
+            <li
+              class="washing-machine__controller-item machine-controller-card"
+            >
+              <h3 class="machine-controller-card__menu">
+                Load
+              </h3>
+              <p class="machine-controller-card__value">Medium</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <section class="modal">
+      <div class="modal__dialog">
+        <div class="modal__coontent">
+          test
+        </div>
+        <button class="btn-clickme">click me</button>
+      </div>
+    </section>
 
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
